@@ -29,22 +29,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-    .forEach must go through every item without stopping. .map returns a new array.
-
+    - `.forEach` discards return values and always returns `undefined`, `.map` allocates memory and stores return values.
 2. What is the difference between a function and a method?
-    A method is a function inside of an object.
-
+    - They are the same thing but a `function` is a bunch of reusable code to complete a task, when a `method` is built into javascript that completes a task while being associated with an object.
+    - `METHOD` - object.toLowerCase()
+    - `FUNCTION` - function task() { return completed }
 3. What is closure?
-    A function that reaches out of the functions scope.
-
+    - A `closure` is made everytime a function is created, A `closure` gives you access you access to an outer function's scope from an inner function.
 4. Describe the four rules of the 'this' keyword.
-    1. Is the function called by new?
-    2. Is the function called by call(), apply(), or bind()?
-    3. Is the function called as a method?
-    4. Is the function called in the global scope?
-
+    - When in `global scope` the of `this` will be the window/console Object
+    - Whenever a preceding dot calls a function, the object before the dot is `this`
+    - Whenever we use a constructor function, `this` refers to the specific instance of the object that is created and returned by the constructor fuction
+    - Whenever we use JavaScript's call or apply method, `this` is explicitly defined.
 5. Why do we need super() in an extended class?
-    To pass any new attributes back up to the constructor of the parent object.
+    - `super()` holds data from the parent class.
 
 ## Project Set up
 
@@ -93,4 +91,4 @@ In your solutions, it is essential that you follow best practices and produce cl
 ## Stretch Problems
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
-* [x]
+[x]
